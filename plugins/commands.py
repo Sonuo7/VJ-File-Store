@@ -13,7 +13,7 @@ from pyrogram import Client, filters, enums
 from plugins.users_api import get_user, update_user_info
 from plugins.database import get_file_details
 from pyrogram.errors import *
-from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import CallbackQuery, Message, InlineKeyboardMarkup, InlineKeyboardButton
 from utils import verify_user, check_token, check_verification, get_token
 from config import AUTH_CHANNEL
 import re
