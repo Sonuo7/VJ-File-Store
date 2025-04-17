@@ -13,7 +13,7 @@ from pyrogram import Client, filters, enums
 from plugins.users_api import get_user, update_user_info
 from plugins.database import get_file_details
 from pyrogram.errors import *
-from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from utils import verify_user, check_token, check_verification, get_token
 from config import AUTH_CHANNEL
 import re
@@ -364,7 +364,7 @@ async def start(client, message):
 # Ask Doubt on telegram @KingVJ01
 
 @Client.on_message(filters.command('api') & filters.private)
-async def shortener_api_handler(client, message):
+async def shortener_api_handler(client, m: Message):
     user_id = m.from_user.id
     user = await get_user(user_id)
     cmd = m.command
