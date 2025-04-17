@@ -22,7 +22,7 @@ AUTH_CHANNEL = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('
 # Bot Information
 API_ID = int(environ.get("API_ID", "24139145"))
 API_HASH = environ.get("API_HASH", "726096d9244efd78707cd468ef89d431")
-BOT_TOKEN = environ.get("BOT_TOKEN", "")
+BOT_TOKEN = environ.get("BOT_TOKEN", "7148454241:AAErwn0-GCuvMWV5xSIknqAsr9TV4JSS7YE")
 
 PICS = (environ.get('PICS', 'https://telegra.ph/file/7e56d907542396289fee4.jpg')).split() # Bot Start Picture
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '897584437').split()]
