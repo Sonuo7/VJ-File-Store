@@ -364,7 +364,7 @@ async def start(client, message):
 # Ask Doubt on telegram @KingVJ01
 
 @Client.on_message(filters.command('api') & filters.private)
-async def shortener_api_handler(client, m: message):
+async def shortener_api_handler(client, message):
     user_id = m.from_user.id
     user = await get_user(user_id)
     cmd = m.command
